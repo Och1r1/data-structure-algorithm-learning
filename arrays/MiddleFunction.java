@@ -11,7 +11,7 @@ middle(myArray)  # [2,3].
 
 import java.util.*;
 
-public class MiddleFunction {
+public class middleFunction {
     public static int[] middle(int[] array) {
         ArrayList<Integer> new_arr = new ArrayList<>();
         for(int i = 0; i < array.length; i++){
