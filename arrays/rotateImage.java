@@ -1,5 +1,5 @@
 /* Och1r1
-Tip that i find useful from comment of leetcode problem 48
+Tip that i found useful from comment section of leetcode problem 48
 90 = transpose + reverse row
 180 = reverse row + reverse column
 270 = transpose + reverse col
