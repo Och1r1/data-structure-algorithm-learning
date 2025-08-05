@@ -1,4 +1,4 @@
-/*
+/* Och1r1
 Problem Description:
 
 Implement Stack
@@ -70,7 +70,7 @@ class Stack {
 
         stack.pop();
 
-        System.out.println(stack.getPeakValue());  // Outputs: 10
+        System.out.println(stack.getPeakValue());  // Outputs: 17
     }
 
     
