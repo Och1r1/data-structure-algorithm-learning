@@ -22,6 +22,9 @@ public class balancedParanthesis {
 
         for(char ch: chars){
             if(ch == ')' || ch == '}' || ch == ']'){
+                if(stack.empty()){
+                    return false;
+                }
                 // '(', '{', '['
                 char c = stack.pop();
                 if (ch == map.get(c)){
@@ -31,11 +34,17 @@ public class balancedParanthesis {
                     return false;
                 }
 
-            }else{
+            }else if(ch == '(' || ch == '{' || ch == '['){
                 stack.push(ch);
             }
         }
-        return true;
+
+        if(stack.empty()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public static void main(String[] args) {
