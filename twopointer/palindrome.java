@@ -1,4 +1,6 @@
-/*
+/* Och1r1
+Problem Description:
+
 Valid Palindrome
 Given a string s, return true if it is a palindrome, otherwise return false.
 
