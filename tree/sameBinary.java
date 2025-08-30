@@ -1,6 +1,6 @@
 /*
 for some reason it beats runtime in 100% in leetcode. i thought my code would run slow
-even though it is o(n), but i wrote so many if else statement.
+even though it is o(n), but i wrote so many if else statement. 
  */
 
 import java.util.Stack;
