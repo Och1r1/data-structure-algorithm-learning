@@ -1,3 +1,5 @@
+
+/* even though i knew that i need to use recursion approach in here, i am very bad with recursion i tried iterative O(n) approach. But it was slow compared to recursive one. 
 import java.util.Queue;
 import java.util.LinkedList;
 import java.util.HashMap;
@@ -44,5 +46,32 @@ public class countGoodNodes {
 
         
         return counter + 1;
+    }
+}
+*/
+
+public class countGoodNodes{
+    int count = 0;
+    int maxVal = Integer.MIN_VALUE;
+
+    void helper(TreeNode node){
+        // recursive function bichihde base case ees ehelne! sugra
+        if(node == null) return;
+
+        int oldMax = maxVal;
+        maxVal = Math.max(node.val, maxVal);
+
+        if(node.val == maxVal) count++;
+
+        helper(node.left);
+        helper(node.right);
+
+        maxVal = oldMax;
+    }
+
+
+    public int goodNodes(TreeNode root){
+        helper(root);
+        return count;
     }
 }
