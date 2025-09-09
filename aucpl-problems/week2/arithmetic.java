@@ -1,16 +1,3 @@
-/*
- * 
-4
-3
-1 1 1
-2
-1 2
-4
-8 4 6 2
-1
--2
- */
-
 import java.util.Scanner;
 
 public class arithmetic {
