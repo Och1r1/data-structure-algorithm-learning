@@ -22,7 +22,7 @@ public class lastStone {
     }
 
     public static void main(String[] args){
-        int[] ls = {2, 3, 6, 2, 4};
+        int[] ls = {2, 3, 63, 2, 4};
         System.out.println(lastStoneWeight(ls));
     }
 }
