@@ -41,7 +41,6 @@ public class Trie {
             }
             node = node.children[index];
         }
-        
         return true;
     }
 }
