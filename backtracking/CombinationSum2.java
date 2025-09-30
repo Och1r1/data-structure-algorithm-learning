@@ -27,6 +27,10 @@ public class CombinationSum2 {
                 continue;
             }
 
+            if (candidates[i] > target) {
+                break;
+            }
+
             subset.add(candidates[i]);
             backtracking(result, subset, candidates, target - candidates[i], i + 1);
             subset.remove(subset.size() - 1);
